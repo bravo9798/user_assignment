@@ -52,7 +52,9 @@ const WelcomePage = () => {
 
   console.log(editUser)
   return (
-    <div>
+    <div className="mainContainer">
+
+    <div className="container">
       <h1>Welcome</h1>
       <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
 
@@ -83,8 +85,10 @@ const WelcomePage = () => {
       </table>
       </div>
       
-      {editUser?.edit && <ChangePasswordForm id={editUser?.id} />}
+      
     </div>
+    {editUser?.edit && <ChangePasswordForm id={editUser?.id} />}
+          </div>
   );
 };
 

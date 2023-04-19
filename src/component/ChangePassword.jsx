@@ -34,6 +34,10 @@ const ChangePasswordForm = ({id}) => {
   };
 
   return (
+    <div className="containar">
+      <div className='modal'>
+
+
     <form onSubmit={handleSubmit} style={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
       <h2>Change Password</h2>
       <label>
@@ -56,6 +60,10 @@ const ChangePasswordForm = ({id}) => {
       </label>
       <button type="submit" style={{marginTop:"30px"}}>Change Password</button>
     </form>
+    </div>
+    </div>
+
+
   );
 };
 
