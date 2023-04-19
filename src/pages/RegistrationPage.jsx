@@ -86,98 +86,101 @@ const RegistrationPage = () => {
   };
 
   return (
-    <div>
-      <h1>Registration</h1>
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <div style={{ display: "flex" }}>
-          <label>Email:</label>
-          <input type="email" value={email} onChange={handleEmailChange} />
-          {!isEmailUnique && (
-            <div style={{ color: "red" }}>Email must be unique</div>
-          )}
-          {email === "" && !validated && (
-            <div style={{ color: "red" }}>Email is required</div>
-          )}
-        </div>
-
-        <br />
-        <div style={{ display: "flex" }}>
-          <label>Password:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          {password === "" && !validated && (
-            <div style={{ color: "red" }}>Password is required</div>
-          )}
-        </div>
-        <div style={{ display: "flex", marginTop: "20px" }}>
-          <label>Username:</label>
-          <input
-            type="name"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-          {username === "" && !validated && (
-            <div style={{ color: "red" }}>Username is required</div>
-          )}
-        </div>
-        <br />
-        <div style={{ display: "flex" }}>
-          <label>Date of Birth:</label>
-          <input
-            type="date"
-            value={dob}
-            onChange={(e) => setDob(e.target.value)}
-          />
-          {dob === "" && !validated && (
-            <div style={{ color: "red" }}>Date of birth is required</div>
-          )}
-        </div>
-        <br />
-        <div style={{ display: "flex" }}>
-          <label>Address:</label>
-          <textarea
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-          ></textarea>
-          {address === "" && !validated && (
-            <div style={{ color: "red" }}>Address is required</div>
-          )}
-        </div>
-        <br />
-        <div style={{ display: "flex" }}>
-          <label>Phone Number:</label>
-          <input
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-          {phone === "" && !validated && (
-            <div style={{ color: "red" }}>Phone number is required</div>
-          )}
-        </div>
-        <br />
-        <button type="submit">Register</button>
-      </form>
-      <div>
-        Already a user?
-        <button
-          onClick={() => navigate("/login")}
-          style={{ marginTop: "50px" }}
-        >
-          Login
-        </button>
+<div className="container">
+  <h1 className="title">Registration</h1>
+  <form
+    onSubmit={handleSubmit}
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    }}
+  >
+    <div className="user__details">
+      <div className="input__box">
+        <label>Email:</label>
+        <input type="email" value={email} onChange={handleEmailChange} />
+        {!isEmailUnique && (
+          <div style={{ color: "red" }}>Email must be unique</div>
+        )}
+        {email === "" && !validated && (
+          <div style={{ color: "red" }}>Email is required</div>
+        )}
       </div>
+
+      <br />
+      <div className="input__box">
+        <label>Password:</label>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        {password === "" && !validated && (
+          <div style={{ color: "red" }}>Password is required</div>
+        )}
+      </div>
+      <div className="input__box" style={{ marginTop: "20px" }}>
+        <label>Username:</label>
+        <input
+          type="name"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        {username === "" && !validated && (
+          <div style={{ color: "red" }}>Username is required</div>
+        )}
+      </div>
+      <br />
+      <div className="input__box">
+        <label>Date of Birth:</label>
+        <input
+          type="date"
+          value={dob}
+          onChange={(e) => setDob(e.target.value)}
+        />
+        {dob === "" && !validated && (
+          <div style={{ color: "red" }}>Date of birth is required</div>
+        )}
+      </div>
+      <br />
+      <div className="input__box">
+        <label>Address:</label>
+        <textarea
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
+        ></textarea>
+        {address === "" && !validated && (
+          <div style={{ color: "red" }}>Address is required</div>
+        )}
+      </div>
+      <br />
+      <div className="input__box">
+        <label>Phone Number:</label>
+        <input
+          type="tel"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+        />
+        {phone === "" && !validated && (
+          <div style={{ color: "red" }}>Phone number is required</div>
+        )}
+      </div>
+      <br />
+      <button type="submit">Register</button>
     </div>
+  </form>
+  <div>
+    Already a user?
+    <button
+      onClick={() => navigate("/login")}
+      style={{ marginTop: "50px" }}
+    >
+      Login
+    </button>
+  </div>
+</div>
+
   );
 };
 
