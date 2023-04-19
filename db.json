@@ -1,0 +1,40 @@
+{
+  "user": [
+    {
+      "username": "bravoDave",
+      "email": "bravo@gmail.com",
+      "password": "newPassword@16281",
+      "dob": "2016-06-28",
+      "address": "E78\nNirala Aspire",
+      "phone": "09316227008",
+      "id": "BtRpKNW"
+    },
+    {
+      "username": "akira",
+      "email": "akd@gmail.com",
+      "password": "new@1234",
+      "dob": "1876-09-16",
+      "address": "ajhsdj,block 1,7728, noida uttar pradesh",
+      "phone": "98763562323",
+      "id": "YKXFtr9"
+    },
+    {
+      "username": "aksdgkjbk",
+      "email": "babayaga@gmail.com",
+      "password": "ad7gidbai",
+      "dob": "2023-04-12",
+      "address": "wkdb",
+      "phone": "09039030",
+      "id": "quDY64x"
+    },
+    {
+      "username": "newUser",
+      "email": "newUSer@gmail.com",
+      "password": "",
+      "dob": "2023-04-12",
+      "address": "new address ,block 1,new strreet, las vegas",
+      "phone": "+91826238237282",
+      "id": "iESua9y"
+    }
+  ]
+}
