@@ -54,6 +54,8 @@ const WelcomePage = () => {
   return (
     <div>
       <h1>Welcome</h1>
+      <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
+
       <table>
         <thead>
           <tr>
@@ -79,6 +81,8 @@ const WelcomePage = () => {
           ))}
         </tbody>
       </table>
+      </div>
+      
       {editUser?.edit && <ChangePasswordForm id={editUser?.id} />}
     </div>
   );

@@ -34,7 +34,7 @@ const ChangePasswordForm = ({id}) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
       <h2>Change Password</h2>
       <label>
         Current Password:
@@ -45,7 +45,7 @@ const ChangePasswordForm = ({id}) => {
           onChange={handleChange}
         />
       </label>
-      <label>
+      <label style={{marginTop:"20px"}}>
         New Password:
         <input
           type="password"
@@ -54,7 +54,7 @@ const ChangePasswordForm = ({id}) => {
           onChange={handleChange}
         />
       </label>
-      <button type="submit">Change Password</button>
+      <button type="submit" style={{marginTop:"30px"}}>Change Password</button>
     </form>
   );
 };
